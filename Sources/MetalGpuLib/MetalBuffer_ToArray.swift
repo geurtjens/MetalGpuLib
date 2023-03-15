@@ -8,27 +8,27 @@ import MetalKit
 import Foundation
 struct MetalBuffer_ToArray {
     
-    static func array_UInt8(buffer:MTLBuffer?, size: Int) -> [UInt8] {
+    public static func array_UInt8(buffer:MTLBuffer?, size: Int) -> [UInt8] {
         return buffer!.contents().toArrayUInt8(capacity:size)
     }
     
-    static func array_Int8(buffer:MTLBuffer?, size: Int) -> [Int8] {
+    public static func array_Int8(buffer:MTLBuffer?, size: Int) -> [Int8] {
         return buffer!.contents().toArrayInt8(capacity:size)
     }
     
-    static func array_UInt16(buffer:MTLBuffer?, size: Int) -> [UInt16] {
+    public static func array_UInt16(buffer:MTLBuffer?, size: Int) -> [UInt16] {
         return buffer!.contents().toArrayUInt16(capacity:size)
     }
     
-    static func array_UInt32(buffer:MTLBuffer?, size: Int) -> [UInt32] {
+    public static func array_UInt32(buffer:MTLBuffer?, size: Int) -> [UInt32] {
         return buffer!.contents().toArrayUInt32(capacity:size)
     }
     
-    static func array_UInt64(buffer:MTLBuffer?, size: Int) -> [UInt64] {
+    public static func array_UInt64(buffer:MTLBuffer?, size: Int) -> [UInt64] {
         return buffer!.contents().toArrayUInt64(capacity:size)
     }
     
-    static func array_UInt(buffer:MTLBuffer?, size: Int) -> [UInt] {
+    public static func array_UInt(buffer:MTLBuffer?, size: Int) -> [UInt] {
         return buffer!.contents().toArrayUInt(capacity:size)
     }
     
@@ -39,7 +39,7 @@ struct MetalBuffer_ToArray {
     ///   - size: The total size of the text buffer
     ///   - offset: Where in the text buffer you are getting your text from, the offset
     /// - Returns: String of text representing the text for a single game
-    static func string_Int8(
+    public static func string_Int8(
         buffer: MTLBuffer?,
         size: Int,
         offset: Int) -> String
@@ -57,7 +57,7 @@ struct MetalBuffer_ToArray {
         
     }
     
-    static func value_UInt32(
+    public static func value_UInt32(
         buffer: MTLBuffer?,
         size: Int,
         offset: Int) -> UInt32

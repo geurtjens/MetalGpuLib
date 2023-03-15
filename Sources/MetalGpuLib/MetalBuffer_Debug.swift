@@ -8,9 +8,9 @@
 import Foundation
 
 /// This is a library that checks the contents of arrays for patterns we might be interested in
-struct GpuBuffer_Debug {
+public struct GpuBuffer_Debug {
     
-    static func CountNonZeroEntries(array: [UInt8]) -> Int {
+    public static func CountNonZeroEntries(array: [UInt8]) -> Int {
         
         let size = array.count
         
@@ -23,7 +23,7 @@ struct GpuBuffer_Debug {
         return count
     }
     
-    static func CountNonZeroEntries(array: [UInt32]) -> Int {
+    public static func CountNonZeroEntries(array: [UInt32]) -> Int {
         
         let size = array.count
         
@@ -36,8 +36,7 @@ struct GpuBuffer_Debug {
         return count
     }
     
-    
-    static func Sum(array: [UInt8]) -> Int {
+    public static func Sum(array: [UInt8]) -> Int {
         
         let size = array.count
         
@@ -48,7 +47,7 @@ struct GpuBuffer_Debug {
         return count
     }
     
-    static func Sum(array: [UInt16]) -> Int {
+    public static func Sum(array: [UInt16]) -> Int {
         
         let size = array.count
         
@@ -59,7 +58,7 @@ struct GpuBuffer_Debug {
         return count
     }
     
-    static func Sum(array: [UInt32]) -> Int {
+    public static func Sum(array: [UInt32]) -> Int {
         
         let size = array.count
         
@@ -70,7 +69,7 @@ struct GpuBuffer_Debug {
         return count
     }
     
-    static func NoZeros(array: [UInt8]) -> Bool {
+    public static func NoZeros(array: [UInt8]) -> Bool {
         
         let size = array.count
         
@@ -82,7 +81,7 @@ struct GpuBuffer_Debug {
         return true
     }
     
-    static func NoZeros(array: [UInt16]) -> Bool {
+    public static func NoZeros(array: [UInt16]) -> Bool {
         
         let size = array.count
         
@@ -94,7 +93,7 @@ struct GpuBuffer_Debug {
         return true
     }
     
-    static func NoZeros(array: [UInt32]) -> Bool {
+    public static func NoZeros(array: [UInt32]) -> Bool {
         
         let size = array.count
         
@@ -106,7 +105,7 @@ struct GpuBuffer_Debug {
         return true
     }
     
-    static func NotAllZeros(array: [UInt32]) -> Bool {
+    public static func NotAllZeros(array: [UInt32]) -> Bool {
         
         let size = array.count
         
@@ -118,7 +117,7 @@ struct GpuBuffer_Debug {
         return false
     }
     
-    static func NotAllZeros(array: [UInt]) -> Bool {
+    public static func NotAllZeros(array: [UInt]) -> Bool {
         
         let size = array.count
         
@@ -130,7 +129,7 @@ struct GpuBuffer_Debug {
         return false
     }
     
-    static func IncreasesByZeroOrOne(array: [UInt32]) -> Bool {
+    public static func IncreasesByZeroOrOne(array: [UInt32]) -> Bool {
         
         let size = array.count
         
@@ -144,7 +143,7 @@ struct GpuBuffer_Debug {
         return true
     }
     
-    static func AlwaysIncreases(array: [UInt32]) -> Bool {
+    public static func AlwaysIncreases(array: [UInt32]) -> Bool {
         
         let size = array.count
         
